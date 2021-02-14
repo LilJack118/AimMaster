@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <script defer type="module" src="src/js/controller.js"></script>
+    <title>Aim Master</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-container">
+        <!-- Start Page  -->
+        <section class="start_page">
+          <h1 class="title">Aim Master</h1>
+          <button class="start">Start</button>
+        </section>
+
+        <!-- Choose mode page  -->
+        <section class="choose_page">
+          <button class="back"><</button>
+          <ul>
+            <li class="choose basic_mode"><p>Play</p></li>
+            <li class="choose reaction_mode"><p>Reaction Check</p></li>
+          </ul>
+        </section>
+
+        <!-- Play Page  -->
+        <section class="play_page">
+          <nav class="settings">
+            <button class="back back_nav"><</button>
+            <ul>
+              <li>Appear Time: <strong id="apear_time">5s</strong></li>
+              <li>Target size: <strong id="target_size">40px</strong></li>
+              <li>Target color: <strong id="target_color">#222</strong></li>
+              <li>
+                Background color: <strong id="background_color">#444</strong>
+              </li>
+            </ul>
+            <button class="settings-btn">Change</button>
+          </nav>
+
+          <!-- Click to start area -->
+          <div class="click_start">
+            <h1 class="click_title">Click To Start</h1>
+          </div>
+
+          <!-- <div class="basic_mode_area">
+            <div class="target"></div>
+          </div> -->
+        </section>
+        <section class="settings_page">
+          <button class="back"><</button>
+          <form class="settings_form">
+            <label>Background Color</label>
+            <input placeholder="#444" />
+            <label>Target Color</label>
+            <input placeholder="#222" />
+            <label>Target Appear Time</label>
+            <input placeholder="5s" />
+            <label>Target Size</label>
+            <input placeholder="40px" />
+
+            <!-- Moveing target switch -->
+            <div class="switch_box">
+              <label class="switch_title">Moveing Target</label>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </form>
+          <button class="submit_settings">Change</button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
